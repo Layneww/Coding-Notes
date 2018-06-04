@@ -25,3 +25,6 @@ nvidia-docker run -it -d --name <container name> -p 8888:8888 -p 6006:6006 -v /h
 
 ### run the container created
 docker exec -it <container name> /bin/bash
+
+### run jupyter notebook
+```jupyter notebook --ip 0.0.0.0 --no-browser --allow-root```
