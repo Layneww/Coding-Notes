@@ -22,9 +22,9 @@ nvidia-docker build -t [image_name] .
 ```
 nvidia-docker run -it -d --name <container name> -p 8888:8888 -p 6006:6006 -v /home/i351756:/root/i351756/ \
 -v /data/i351756/dev:/data/ <image id/name>  /bin/bash
-
+```
 ### run the container created
-docker exec -it <container name> /bin/bash
+``` docker exec -it <container name> /bin/bash ```
 
 ### run jupyter notebook
-```jupyter notebook --ip 0.0.0.0 --no-browser --allow-root```
+``` jupyter notebook --ip 0.0.0.0 --no-browser --allow-root ```
