@@ -23,6 +23,9 @@ nvidia-docker build -t [image_name] .
 nvidia-docker run -it -d --name <container name> -p 8888:8888 -p 6006:6006 -v /home/i351756:/root/i351756/ \
 -v /data/i351756/dev:/data/ <image id/name>  /bin/bash
 ```
+```
+docker run -it -d --name lstmtrain -p 1234:8888 -p 5678:6006 -v /home/i351756:/root/i351756 -v /data/i351756/dev:/data/ i351756_tess:alpha /bin/bash
+```
 ### run the container created
 ``` docker exec -it <container name> /bin/bash ```
 
@@ -31,4 +34,8 @@ nvidia-docker run -it -d --name <container name> -p 8888:8888 -p 6006:6006 -v /h
 jupyter notebook --generate-config
 jupyter notebook --ip 0.0.0.0 --no-browser --allow-root
 # Then locally, enter <DNS address>:<port assigned> in the browser
+```
+### remove docker image
+```
+docker rmi <image:tag>
 ```
