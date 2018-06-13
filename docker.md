@@ -13,6 +13,12 @@ rsync -avz ~/Desktop/Dockerfile your-i-number@dgx:/data/your-i-number/dockerfile
 rsync -avz ~/Desktop/apt.conf your-i-number@dgx:/data/your-i-number/dockerfile/
 ```
 
+### send file from one server to another server
+First go into one server
+```
+rsync -ravP <directory/fileToBeMoved> <i-number>@LSSINH031:<directoryToMoveIn>
+```
+
 ### Build image
 ```
 cd /data/your-i-number/dockerfile/
