@@ -4,6 +4,9 @@
 ### jupyter notebook
 ``` jupyter notebook --ip 0.0.0.0 --no-browser --allow-root ```
 
+### find a file/dir from root
+```find / -iname <name> -print```
+
 ### access the server
 ``` ssh root@example.com ```
 
