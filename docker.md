@@ -48,3 +48,7 @@ jupyter notebook --ip 0.0.0.0 --no-browser --allow-root
 ```
 docker rmi <image:tag>
 ```
+### command line usage
+```
+for i in `seq 0 9999`; do if [ ! -e "$i.txt" ]; then echo "$i"; fi; done
+```
