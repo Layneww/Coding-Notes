@@ -15,6 +15,10 @@
 rsync -avz ~/Desktop/Dockerfile your-i-number@dgx:/data/your-i-number/dockerfile/
 rsync -avz ~/Desktop/apt.conf your-i-number@dgx:/data/your-i-number/dockerfile/
 ```
+### Send folder to AWS
+```
+scp -pr -i ../Downloads/cputesting.pem <folder> ubuntu@ec2-13-229-154-85.ap-southeast-1.compute.amazonaws.com:<target folder>
+```
 
 ### send file from one server to another server
 First go into one server
